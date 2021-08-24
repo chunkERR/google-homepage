@@ -12,27 +12,18 @@
   row-gap: 20px; 
 }
 #google-logo {
-  top: -100px;
+  top: -200px;
 }
-}
-input[type="button"] {
+.buttons {
     background-color: grey;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
-  input[type="search"] {
-    size: 300px;
-  }
-  
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -43,8 +34,40 @@ input[type="button"] {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    color: #222;
+    flex-direction: row-reverse;
+    float: right;
+  }
+  .navbar:hover   {
+    text-decoration: underline;
+  }
+  .footer:hover {
+    text-decoration: underline;
+  }
+
+  #search-bar {
+    width: 400px;
+    height: auto;
+  }
+  .buttons {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    display: flex;
+    align-items: flex-start;
     color: black;
+    flex-direction: row-reverse;
+    float: right;
   }
 </style>
     
@@ -52,7 +75,7 @@ input[type="button"] {
 
 <div class="navbar">
   <ul>
-    <li><a href="www.gmail.com">Gmail</a></li>
+    <li><a href="www.mail.google.com">Gmail</a></li>
     <li><a href="https://www.google.pl/imghp?hl=en&ogbl">Images</a></li>
     <li><a href="contact.asp">Contact</a></li>
     <li><a href="about.asp">About</a></li>
@@ -61,10 +84,25 @@ input[type="button"] {
 </div>
 <div class="main">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="google-logo"></img>
-    <input type="text" placeholder="Search..">
-    <button type="button">Google Search</button> 
-  </div> 
+    <input type="text" placeholder="Search.." id="search-bar">
+ </div> 
+ 
+ <div class="buttons"><button type="button" id="search-button">Google Search</button>
+  <button type="button" id="lucky-button">I'm feeling lucky!</button> 
+</div>
 
+<div>
+  <div class="footer">
+    <ul>
+      <li><a href="www.mail.google.com">About</a></li>
+      <li><a href="https://www.google.pl/imghp?hl=en&ogbl">Advertising</a></li>
+      <li><a href="contact.asp">Business</a></li>
+      <li><a href="about.asp">How Search Works</a></li>
+      <li><a href="https://www.google.pl/imghp?hl=en&ogbl">Privacy</a></li>
+      <li><a href="contact.asp">Terms</a></li>
+      <li><a href="about.asp">Settings</a></li>
+    </ul>
+</div>
 
 
 
