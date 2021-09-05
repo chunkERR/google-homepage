@@ -1,103 +1,16 @@
 <!DOCTYPE html>
 <html>
-<style>
+  <link rel="stylesheet" href=style.css>
 
-
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 20px;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-.buttons {
-  background-color: #f5f5f5;
-  border:none;
-  color:#707070;
-  font-size:15px;
-  padding: 10px 20px;
-  margin:5px;
-  border-radius:4px;
-  outline:none;
-  }
-.buttons:hover {
-  border: 1px solid #c8c8c8;
-  padding: 9px 19px;
-  color:#808080;
-}
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    color: #222;
-    float: right;
-    padding: 6px;
-    text-decoration: none;
-  }
-  .navbar:hover .footer:hover {
-    text-decoration: underline;
-  }
-
-  li {
-    float: right;
-  }
-  li a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  li a:hover {
-    text-decoration: underline;
-  }
-  .footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-    background: #f2f2f2;
-
-  }
-  #search-bar {
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: rgba(0,0,0,.87);
-    word-wrap: break-word;
-    outline: none;
-    display: flex;
-    flex: 100%;
-    -webkit-tap-highlight-color: transparent;
-    font-size: 16px;
-  }
-</style>
-    
-
-<header>
   <div class="navbar">
   <ul>
     <li><a href="https://gmail.com/">Gmail</a></li>
     <li><a href="https://www.google.pl/imghp?hl=en&ogbl">Images</a></li>
+    <span class="material-icons-outlined">
+      apps
+      </span>
   </ul>
  </div>
-</header>
 
 
 <body>
@@ -111,28 +24,24 @@
  </div> 
 </body>
  
- <footer>
+
   <div class="footer">
+
+    <span class="footer-left">
     <ul>
       <li><a href="https://gmail.com/">About</a></li>
       <li><a href="https://www.google.pl/imghp?hl=en&ogbl">Advertising</a></li>
       <li><a href="contact.asp">Business</a></li>
       <li><a href="about.asp">How Search Works</a></li>
+    </span>
+
+    <span class="footer-right">
       <li><a href="https://www.google.pl/imghp?hl=en&ogbl">Privacy</a></li>
       <li><a href="contact.asp">Terms</a></li>
       <li><a href="about.asp">Settings</a></li>
     </ul>
+  </span>
 </div>
- </footer>
 <div>
 
-
-
-
-
-
-
-
-
-
-</html>
+  </html>
